@@ -17,7 +17,7 @@
 \RequirePackage{lmodern}
 \RequirePackage[T1]{fontenc}
 \RequirePackage[utf8x]{inputenc}
-\RequirePackage[brazilian]{babel}
+\RequirePackage[brazilian,english]{babel}
 
 %% Utilização com xetex ou luatex
 % \RequirePackage{fontspec}
@@ -160,7 +160,7 @@
 
     \node  (titulo) [caixa texto,right=2.5mm of current page.west, yshift=5mm] {%
       % Insere titulo
-      \ifx\insertsubtitle\@empty%
+      \ifx\inserttitle\@empty%
       \else%
       \parbox{100mm}{%
         \usebeamerfont{title}%
